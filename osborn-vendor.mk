@@ -1159,6 +1159,11 @@ PRODUCT_PACKAGES += \
     SVIService \
     TimeService \
     qti-telephony-common
+# Hack
+$(shell mkdir -p out/target/common/obj/JAVA_LIBRARIES/qti-telephony-common_intermediates)
+$(shell cp vendor/smartisan/osborn/proprietary/framework/qti-telephony-common.jar out/target/common/obj/JAVA_LIBRARIES/qti-telephony-common_intermediates/classes.jar)
+PRODUCT_BOOT_JARS += \
+    qti-telephony-common
 PRODUCT_COPY_FILES += \
     vendor/smartisan/osborn/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@1.0-service \
     vendor/smartisan/osborn/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
