@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/osborn/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/smartisan/osborn/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
     vendor/smartisan/osborn/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
-    vendor/smartisan/osborn/proprietary/bin/ifaad:system/bin/ifaad \
     vendor/smartisan/osborn/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/smartisan/osborn/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/smartisan/osborn/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
@@ -155,8 +154,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/osborn/proprietary/vendor/lib/libarcsoft_picselfie_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_picselfie_algorithm.so \
     vendor/smartisan/osborn/proprietary/vendor/lib/libarcsoft_refocus_sm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_refocus_sm.so \
     vendor/smartisan/osborn/proprietary/vendor/lib/libarcsoft_smart_denoise.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_smart_denoise.so \
-    vendor/smartisan/osborn/proprietary/lib/libifaa_daemon.so:system/lib/libifaa_daemon.so \
-    vendor/smartisan/osborn/proprietary/lib/libifaa_jni.so:system/lib/libifaa_jni.so \
     vendor/smartisan/osborn/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
     vendor/smartisan/osborn/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
     vendor/smartisan/osborn/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
@@ -174,12 +171,9 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/osborn/proprietary/vendor/lib64/hw/audio.primary.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.sdm660.so \
     vendor/smartisan/osborn/proprietary/vendor/lib64/hw/fingerprint.fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.so \
     vendor/smartisan/osborn/proprietary/vendor/lib64/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.so \
-    vendor/smartisan/osborn/proprietary/lib64/lib_ifaa_tac.so:system/lib64/lib_ifaa_tac.so \
     vendor/smartisan/osborn/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
     vendor/smartisan/osborn/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/smartisan/osborn/proprietary/vendor/lib64/libgoodixfingerprintd_binder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixfingerprintd_binder.so \
-    vendor/smartisan/osborn/proprietary/lib64/libifaa_daemon.so:system/lib64/libifaa_daemon.so \
-    vendor/smartisan/osborn/proprietary/lib64/libifaa_jni.so:system/lib64/libifaa_jni.so \
     vendor/smartisan/osborn/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
     vendor/smartisan/osborn/proprietary/vendor/bin/mm-pp-dpps:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-dpps \
     vendor/smartisan/osborn/proprietary/vendor/firmware/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/libpn553_fw.so \
@@ -511,7 +505,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/osborn/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so
 
 PRODUCT_PACKAGES += \
-    ifaa_fw \
     dm-tool \
     logic_volume
 PRODUCT_COPY_FILES += \

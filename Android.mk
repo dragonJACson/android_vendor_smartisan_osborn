@@ -19,16 +19,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),osborn)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ifaa_fw
-LOCAL_MODULE_OWNER := smartisan
-LOCAL_SRC_FILES := proprietary/framework/ifaa_fw.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := dm-tool
 LOCAL_MODULE_OWNER := smartisan
 LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT_SBIN)
